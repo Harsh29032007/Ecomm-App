@@ -5,7 +5,7 @@ FROM node:22-alpine AS builder
  WORKDIR /app
 
 # Copy the package files
-COPY package*.json 
+COPY package*.json ./
 
 # run the install command
 RUN npm install
